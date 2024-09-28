@@ -14,16 +14,16 @@ export const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule),
-    canActivate: [authGuard]
+    // canActivate: [authGuard]
   },
   {
     path: 'consultas',
     loadChildren: () => import('./pages/consultation/consultation.module').then(m => m.ConsultationModule),
-    canActivate: [authGuard]
+    // canActivate: [authGuard]
   },
   {
     path: 'agendamento',
     loadChildren: () => import('./pages/scheduling/scheduling.module').then(m => m.SchedulingModule),
-    canActivate: [authGuard]
+    // canActivate: [authGuard]
   }
 ];

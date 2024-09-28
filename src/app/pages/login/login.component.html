@@ -1,1 +1,27 @@
-<p>login works!</p>
+<body>
+<header>
+  <img src="assets/images/logo.svg" alt="logo" class="logo">
+</header>
+
+<main class="login-container">
+  <div class="login-box">
+    <div class="login-form">
+      <h1>LOGIN</h1>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="input-group">
+          <i class="pi pi-envelope"></i>
+          <input type="email" id="email" formControlName="email" placeholder="Email">
+        </div>
+        <div class="input-group">
+          <i class="pi pi-lock"></i>
+          <input type="password" id="password" formControlName="password" placeholder="Senha">
+        </div>
+        <button type="submit" class="btn-login">Login</button>
+      </form>
+    </div>
+    <div class="illustration">
+      <img src="assets/images/art-1.svg" alt="illustration">
+    </div>
+  </div>
+</main>
+</body>
